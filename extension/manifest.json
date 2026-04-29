@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "LuminaGuard - Dark Pattern Detector",
+  "version": "1.0",
+  "description": "AI-powered detection of deceptive e-commerce patterns by Golden Arrows.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab", 
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8000/*",
+    "<all_urls>"
+  ]
+}
