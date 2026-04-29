@@ -1,0 +1,15 @@
+'ET' is not recognized as an internal or external command,
+operable program or batch file.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ ReferenceError: openExtensionFolder is not defined
+    at HomePage (app\page.tsx:476:36)
+  474 |                     </p>
+  475 |                   </div>
+> 476 |                   <Button onClick={openExtensionFolder}>
+      |                                    ^
+  477 |                     <FolderOpen className="mr-2 h-4 w-4" />
+  478 |                     Add Extension
+  479 |                   </Button> {
+  digest: '1427505394'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.

@@ -1,0 +1,79 @@
+/* Dark Pattern Detector - Highlight Styles */
+
+.dp-detected-pattern {
+  outline: 2px solid #ff6b6b !important;
+  outline-offset: 2px !important;
+  position: relative !important;
+  background-color: rgba(255, 107, 107, 0.1) !important;
+  border-radius: 4px !important;
+}
+
+.dp-detected-pattern::before {
+  content: "⚠️";
+  position: absolute !important;
+  top: -8px !important;
+  right: -8px !important;
+  font-size: 14px !important;
+  z-index: 2147483646 !important;
+  background: #1a1a2e !important;
+  border-radius: 50% !important;
+  width: 20px !important;
+  height: 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
+}
+
+/* Different colors for different pattern types */
+.dp-detected-pattern[data-dp-type="fake_urgency"],
+.dp-detected-pattern[data-dp-type="countdown_timer"] {
+  outline-color: #f59e0b !important;
+  background-color: rgba(245, 158, 11, 0.1) !important;
+}
+
+.dp-detected-pattern[data-dp-type="preselected_checkbox"] {
+  outline-color: #ef4444 !important;
+  background-color: rgba(239, 68, 68, 0.1) !important;
+}
+
+.dp-detected-pattern[data-dp-type="misleading_buttons"] {
+  outline-color: #8b5cf6 !important;
+  background-color: rgba(139, 92, 246, 0.1) !important;
+}
+
+.dp-detected-pattern[data-dp-type="suspicious_pricing"],
+.dp-detected-pattern[data-dp-type="hidden_costs"] {
+  outline-color: #10b981 !important;
+  background-color: rgba(16, 185, 129, 0.1) !important;
+}
+
+.dp-detected-pattern[data-dp-type="confirmshaming"] {
+  outline-color: #ec4899 !important;
+  background-color: rgba(236, 72, 153, 0.1) !important;
+}
+
+.dp-detected-pattern[data-dp-type="forced_continuity"] {
+  outline-color: #6366f1 !important;
+  background-color: rgba(99, 102, 241, 0.1) !important;
+}
+
+/* Animation for newly detected patterns */
+@keyframes dp-pulse {
+  0% {
+    outline-width: 2px;
+    outline-offset: 2px;
+  }
+  50% {
+    outline-width: 4px;
+    outline-offset: 0px;
+  }
+  100% {
+    outline-width: 2px;
+    outline-offset: 2px;
+  }
+}
+
+.dp-detected-pattern {
+  animation: dp-pulse 2s ease-in-out 1;
+}

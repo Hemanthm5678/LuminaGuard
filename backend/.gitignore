@@ -1,2 +1,13 @@
+# This covers all subfolders (Next.js & Backend)
+**/node_modules/
+**/.next/
+**/__pycache__/
+**/venv/
+**/*.pyc
+
+# Security
 .env
-__pycache__/
+**/.env
+
+# Large Assets
+**/*.pkl

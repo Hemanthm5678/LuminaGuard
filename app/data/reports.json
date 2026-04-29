@@ -1,0 +1,224 @@
+{
+  "reports": [
+    {
+      "url": "https://www.boat-lifestyle.com/collections/best-sound-for-champions?gad_campaignid=23777064442&gad_source=1&utm_campaign=L%26F_boAt_D2C_Pmax_AllProducts_AllUsers_India_IPL_Plan_20%2F04%2F26&utm_medium=cpc&utm_source=Google&_gl=1*pvo8op*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjw2MbPBhCSARIsAP3jP9xgv9m0Iyx59kZOjZhfUftYQkLORQX9BN0kcaRYayXi90ZcqvjOJxsaAsNBEALw_wcB&gbraid=0AAAAADCnhlwoZQ4VE0N5bC76cv-LxHT9x",
+      "hostname": "www.boat-lifestyle.com",
+      "score": 0,
+      "patterns": [],
+      "timestamp": "2026-04-29T19:39:42.984Z",
+      "id": "b75b17f9-7758-4f03-85f1-e252a244045f",
+      "reportedAt": "2026-04-29T19:39:43.009Z"
+    },
+    {
+      "url": "https://hustleculture.co.in/collections/sale?utm_source=google&utm_medium=paid&utm_campaign=21530218978&utm_content=172312405344&utm_term=hustle+culture&gadid=707740312791&gad_source=1&gad_campaignid=21530218978&gbraid=0AAAAA9_J_hbtZWR-XQL5qyAU_SGa2Z-Q3&gclid=Cj0KCQjw2MbPBhCSARIsAP3jP9w-Kw2tBojCb7jvVnMO-exofBfutKAPjRrxnof7fzDu3Oy0OZDUA1QaAgYnEALw_wcB",
+      "hostname": "hustleculture.co.in",
+      "score": 0,
+      "patterns": [],
+      "timestamp": "2026-04-29T19:42:40.215Z",
+      "id": "e2f4a3e8-d579-48cd-8e8f-c6140f36c6cb",
+      "reportedAt": "2026-04-29T19:42:40.226Z"
+    },
+    {
+      "url": "https://www.myntra.com/?utm_source=dms_google&utm_medium=dms_searchbrand_cpc&utm_campaign=dms_google_searchbrand_cpc_Search_Brand_Myntra_Geo_Brand_India_BM_TROAS_SOK_New&gad_source=1&gad_campaignid=23791016610&gbraid=0AAAAADoxBh4ZURLTX6ZWmg97BEyajWz3G&gclid=Cj0KCQjw2MbPBhCSARIsAP3jP9z6fzQfqbJ7SyxunavWIXDrwS1BRAFZEuLUukpv-u1ONXCvm9lv22gaAqdhEALw_wcB",
+      "hostname": "www.myntra.com",
+      "score": 0,
+      "patterns": [],
+      "timestamp": "2026-04-29T19:40:36.121Z",
+      "id": "1405fda6-864b-46e3-9945-1dc81739b132",
+      "reportedAt": "2026-04-29T19:40:36.136Z"
+    },
+    {
+      "url": "https://www.flipkart.com/",
+      "hostname": "www.flipkart.com",
+      "score": 0,
+      "patterns": [],
+      "timestamp": "2026-04-29T20:43:43.804Z",
+      "id": "4b9f7b1f-da87-419d-8058-7a9f6891e7dc",
+      "reportedAt": "2026-04-29T20:43:43.811Z"
+    },
+    {
+      "url": "https://www.alibaba.com/?bm=cps&src=saf&tp1=5f407fd4df8a56ac17a3b1cff581e7bc&pid=1895624&gad_source=1&gad_campaignid=23788936965&gbraid=0AAAABDZQMP2OtW2Ig3VDdWMniVM7sLUFw&gclid=Cj0KCQjw2MbPBhCSARIsAP3jP9z9onxBRH7Ham0hPnz1sRxIRe8N-7ULawGGB3mHNEq4D9LJTobGSv8aAsaDEALw_wcB",
+      "hostname": "www.alibaba.com",
+      "score": 0,
+      "patterns": [],
+      "timestamp": "2026-04-29T20:43:44.070Z",
+      "id": "c7ccef1b-a2e6-4509-952b-a1213a8c884f",
+      "reportedAt": "2026-04-29T20:43:44.075Z"
+    },
+    {
+      "url": "https://in.bookmyshow.com/explore/home/bengaluru",
+      "hostname": "in.bookmyshow.com",
+      "score": 0,
+      "patterns": [],
+      "timestamp": "2026-04-29T21:37:52.151Z",
+      "id": "fe0dae59-34a6-46ea-a80b-3e831c645b80",
+      "reportedAt": "2026-04-29T21:37:52.157Z"
+    },
+    {
+      "url": "https://netmirror.gg/2/en",
+      "hostname": "netmirror.gg",
+      "score": 0,
+      "patterns": [],
+      "timestamp": "2026-04-29T22:25:10.144Z",
+      "id": "82ef0d6a-de7f-490f-a5a1-0d54ca50f37a",
+      "reportedAt": "2026-04-29T22:25:10.150Z"
+    },
+    {
+      "url": "https://fitgirl-repacks.site/popular-repacks/",
+      "hostname": "fitgirl-repacks.site",
+      "score": 0,
+      "patterns": [],
+      "timestamp": "2026-04-29T22:38:56.257Z",
+      "id": "efb0e42e-2dad-43d9-a21b-4d2ac5c81eba",
+      "reportedAt": "2026-04-29T22:38:56.262Z"
+    },
+    {
+      "url": "https://gemini.google.com/app/ca64ec801578d9b5?hl=en-IN",
+      "hostname": "gemini.google.com",
+      "score": 0,
+      "patterns": [],
+      "timestamp": "2026-04-29T21:36:26.970Z",
+      "id": "c8bc65fe-5a90-443a-820a-bb0f6fa85ac9",
+      "reportedAt": "2026-04-29T21:36:26.973Z"
+    },
+    {
+      "url": "https://www.booking.com/index.html?aid=2311236;label=en-in-booking-desktop-SoQWfYhAMBURf0HSQntj1AS652796016141:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-334108349:lp9062053:li:dec:dm;ws=&gad_source=1&gad_campaignid=19655505510&gbraid=0AAAAAD_Ls1JX53oWnWrTJNONGKmt0-ico&gclid=Cj0KCQjw2MbPBhCSARIsAP3jP9yUECwggMV4bIlAyl1pN_ZkQj1J6r6Ka2BJkaowxyQZidF9_wAffY8aAipzEALw_wcB&chal_t=1777498359974&force_referer=https%3A%2F%2Fwww.google.com%2F",
+      "hostname": "www.booking.com",
+      "score": 30,
+      "patterns": [
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 2,459LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 8,000LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 1,700LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 22,500LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 6,300LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 14,000LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 13,844LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 11,398LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 29,639LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 13,400LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 30,650LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 13,077LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 11,430LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 18,000LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 7,000LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 21,023LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 17,000LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 10,799LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 10,544LUMINA: SUSPICIOUS PRICING"
+        },
+        {
+          "type": "suspicious_pricing",
+          "name": "Suspicious Pricing",
+          "description": "Uses discount framing or crossed prices to influence choices.",
+          "text": "₹ 29,880LUMINA: SUSPICIOUS PRICING"
+        }
+      ],
+      "timestamp": "2026-04-29T22:03:54.354Z",
+      "id": "b41b3091-66d8-4882-ae51-ccc6dab4420b",
+      "reportedAt": "2026-04-29T22:03:54.364Z"
+    },
+    {
+      "url": "https://www.cineby.sc/",
+      "hostname": "www.cineby.sc",
+      "score": 0,
+      "patterns": [],
+      "timestamp": "2026-04-29T22:39:21.808Z",
+      "id": "76eb8232-c876-4848-b173-34793261be64",
+      "reportedAt": "2026-04-29T22:39:21.813Z"
+    }
+  ]
+}

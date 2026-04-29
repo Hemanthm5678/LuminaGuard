@@ -2,24 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Pro</title>
+    <link rel="stylesheet" href="popup.css">
 </head>
-<body class="w-80 bg-slate-900 text-white p-4 font-sans">
-    
-    <div class="flex items-center justify-between mb-4">
-        <h1 class="text-xl font-bold text-amber-400">🏹 LuminaGuard</h1>
-        <span class="bg-green-500/20 text-green-400 text-xs px-2 py-1 rounded-full border border-green-500/30">API Online</span>
+<body>
+    <div class="header">
+        <h1>LUMINA <span>PRO</span></h1>
+        <div id="status-dot" aria-label="System ready"></div>
     </div>
 
-    <p class="text-sm text-slate-300 mb-4">Click below to scan the current webpage for deceptive UI patterns.</p>
-    
-    <div id="status-box" class="hidden">
+    <div class="score-card">
+        <div class="score-row">
+            <span class="label">Integrity Score</span>
+            <span id="score-text">0%</span>
         </div>
+        <div class="progress-track">
+            <div id="score-bar" style="width: 0%"></div>
+        </div>
+        <p id="verdict-label">System Ready</p>
+    </div>
 
-    <button id="scan-btn" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2 rounded-lg transition-colors shadow-lg shadow-indigo-500/30">
-        Scan Current Page
-    </button>
+    <div id="clone-alert">
+        <p>Malicious Clone</p>
+        <a id="secure-link" href="#" target="_blank" rel="noopener noreferrer">Go to Original Site -&gt;</a>
+    </div>
 
+    <button id="scan-btn" type="button">Run Integrity Audit</button>
     <script src="popup.js"></script>
 </body>
 </html>
