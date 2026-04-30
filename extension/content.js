@@ -43,7 +43,7 @@ async function startAudit() {
 
     try {
         // D. PERMANENT PORT 8000 LOCK
-        const resp = await fetch("http://127.0.0.1:8000/analyze_site", {
+        const resp = await fetch("https://lumina-backend-ddhr.onrender.com/analyze_site", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ url: window.location.href, elements: toScan })
