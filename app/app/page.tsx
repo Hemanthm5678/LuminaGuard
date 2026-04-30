@@ -18,8 +18,7 @@ import {
 
 // --- INTEGRATION LOGIC ---
 // This variable checks if you're in the cloud or on your laptop automatically.
-const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000';
-
+const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "https://lumina-backend-ddhr.onrender.com";
 interface Stats {
   totalReports: number;
   averageScore: number;

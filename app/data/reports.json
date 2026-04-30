@@ -41,9 +41,9 @@
       "hostname": "www.alibaba.com",
       "score": 0,
       "patterns": [],
-      "timestamp": "2026-04-29T20:43:44.070Z",
+      "timestamp": "2026-04-30T04:01:25.945Z",
       "id": "c7ccef1b-a2e6-4509-952b-a1213a8c884f",
-      "reportedAt": "2026-04-29T20:43:44.075Z"
+      "reportedAt": "2026-04-30T04:01:25.955Z"
     },
     {
       "url": "https://in.bookmyshow.com/explore/home/bengaluru",
@@ -207,9 +207,9 @@
           "text": "₹ 29,880LUMINA: SUSPICIOUS PRICING"
         }
       ],
-      "timestamp": "2026-04-29T22:03:54.354Z",
+      "timestamp": "2026-04-30T04:01:27.884Z",
       "id": "b41b3091-66d8-4882-ae51-ccc6dab4420b",
-      "reportedAt": "2026-04-29T22:03:54.364Z"
+      "reportedAt": "2026-04-30T04:01:27.893Z"
     },
     {
       "url": "https://www.cineby.sc/",
@@ -219,6 +219,15 @@
       "timestamp": "2026-04-29T22:39:21.808Z",
       "id": "76eb8232-c876-4848-b173-34793261be64",
       "reportedAt": "2026-04-29T22:39:21.813Z"
+    },
+    {
+      "url": "https://github.com/Hemanthm5678/LuminaGuard/new/main?filename=README.md",
+      "hostname": "github.com",
+      "score": 0,
+      "patterns": [],
+      "timestamp": "2026-04-30T04:01:00.799Z",
+      "id": "5cfb6eb7-73e0-4073-b25d-882c33aa63ef",
+      "reportedAt": "2026-04-30T04:01:00.809Z"
     }
   ]
 }
