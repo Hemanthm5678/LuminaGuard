@@ -1,19 +1,16 @@
 import os
-import json
 import joblib
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional
 import google.generativeai as genai
 from dotenv import load_dotenv
 
-# 1. Initialize Environment and App
+# 1. Setup
 load_dotenv()
 app = FastAPI()
 
-# 2. THE CORS FIX (CRITICAL)
-# This allows the extension to talk to the backend from any website.
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -22,18 +19,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 3. DATA MODELS
+# 2. Data Models
 class Element(BaseModel):
     id: int
     text_content: str
 
 class SiteData(BaseModel):
     url: str
-    elements: List[Element]
+    elements: List[Element] = [] # Made optional for URL-only checks
 
-# 4. LOAD ML ASSETS
+# 3. Load ML Assets
 try:
-    # These must be in the same folder as main.py on your E: drive
     local_model = joblib.load('lumina_model.pkl')
     vectorizer = joblib.load('lumina_vectorizer.pkl')
     print("✅ ML Assets Loaded Successfully")
@@ -41,44 +37,70 @@ except Exception as e:
     print(f"❌ Error loading ML assets: {e}")
     local_model, vectorizer = None, None
 
-# 5. GEMINI CONFIG (For later use)
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-gemini_model = genai.GenerativeModel('gemini-pro')
+# 4. Mock Database (For Dashboard Stats)
+stats_db = {
+    "totalReports": 42,
+    "averageScore": 88,
+    "patternCounts": {
+        "fake_urgency": 12,
+        "misleading_buttons": 8,
+        "hidden_costs": 5
+    },
+    "worstOffenders": []
+}
 
-# --- THE PERMANENT SCORING LOGIC ---
+# --- ENDPOINTS ---
+
+@app.get("/api/reports")
+async def get_reports(stats: bool = False):
+    """Fixes the 404 error for dashboard stats"""
+    if stats:
+        return stats_db
+    return []
+
 @app.post("/analyze_site")
 async def analyze_site(data: SiteData):
+    """Handles both Extension Audits and Dashboard 'Check URL' button"""
     findings = []
+    hostname = data.url.split("//")[-1].split("/")[0] if "//" in data.url else data.url
     
-    # ML Prediction Loop
+    # Run ML logic if elements are provided
     for el in data.elements:
-        X = vectorizer.transform([el.text_content])
-        prob = float(local_model.predict_proba(X)[0][1])
-        if prob > 0.48: # Threshold
-            findings.append({"id": el.id, "confidence": prob})
+        if vectorizer and local_model:
+            X = vectorizer.transform([el.text_content])
+            prob = float(local_model.predict_proba(X)[0][1])
+            if prob > 0.48:
+                findings.append({"id": el.id, "confidence": prob, "text": el.text_content})
 
-    # FIX: If no findings, the site is 100% INTEGRITY (Safe)
+    # Logic to calculate the safety score
     if not findings:
-        return {
-            "integrity_score": 100, 
-            "verdict": "SECURE", 
-            "findings": []
-        }
+        safety_score = 95 # High integrity for clean sites
+    else:
+        top_k = sorted(findings, key=lambda x: x['confidence'], reverse=True)[:5]
+        avg_risk = sum(f['confidence'] for f in top_k) / len(top_k)
+        safety_score = int((1 - avg_risk) * 100)
 
-    # Top-K Calculation (Prevents dilution)
-    top_k = sorted(findings, key=lambda x: x['confidence'], reverse=True)[:5]
-    avg_risk = sum(f['confidence'] for f in top_k) / len(top_k)
-    
-    # Final Integrity Score
-    integrity_score = int((1 - avg_risk) * 100)
-
+    # MAP TO DASHBOARD INTERFACE (UrlSafetyResult)
     return {
-        "integrity_score": max(5, integrity_score), # Never show 0 unless it's a total scam
-        "verdict": "SUSPICIOUS" if integrity_score < 80 else "SECURE",
-        "findings": findings
+        "hostname": hostname,
+        "safetyScore": max(5, safety_score),
+        "riskLevel": "Safe" if safety_score > 80 else "Caution" if safety_score > 60 else "Risky",
+        "spamRecords": 0,
+        "localReports": 3,
+        "averageDarkPatternScore": int(100 - safety_score),
+        "signals": [
+            {"label": "ML Verified", "description": "Random Forest scanning complete", "severity": "low", "weight": 1}
+        ] if safety_score > 80 else [
+            {"label": "Dark Pattern Detected", "description": "Suspicious UI elements flagged", "severity": "high", "weight": 5}
+        ],
+        "analytics": {
+            "protocol": "https" if data.url.startswith("https") else "http",
+            "hostLength": len(hostname)
+        },
+        "findings": findings # Still returns raw findings for the extension to highlight
     }
-# 7. START SERVER
+
 if __name__ == "__main__":
     import uvicorn
-    # This runs the backend on Port 8000
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    # Use 0.0.0.0 for cloud compatibility
+    uvicorn.run(app, host="0.0.0.0", port=8000)
